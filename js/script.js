@@ -1,0 +1,1 @@
+"use strict";var number=0,swiper=new Swiper(".mySwiper",{spaceBetween:30,pagination:{el:".s-hero .swiper .swiper-pagination",clickable:!0}});

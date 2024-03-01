@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    max-width: 116rem;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+    
+    @include responsive(1100px) {
+        padding: 0;
+    }
+    @include responsive(1000px) {
+        
+    }
+    
+    @include responsive(1400px) {
+        width: 116rem;
+    }
+}

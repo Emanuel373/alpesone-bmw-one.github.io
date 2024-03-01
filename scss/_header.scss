@@ -1,0 +1,123 @@
+header {
+    width: 100%;
+    height: 6rem;
+    background-color: $white;
+    .btn-request {
+        button {
+            width: 100% !important;
+        }
+    }
+    nav {
+        @include flex(row, center, space-between);
+        height: 6rem;
+        .contact {
+            .btn-contact {
+                @include flex(row, center, initial);
+                a {
+                    @include flex(row, center, initial);
+                    .img-contact-desk {
+                        display: none;
+                    }
+                    img {
+                        width: 1.9rem;
+                        margin-right: .6rem;
+                    }
+                    span {
+                        font-family: 'bmw bold';
+                        font-size: 1.4rem;
+                        color: $gray-500;
+                    }
+                    &:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+           
+            .carosel-hero {
+                display: none;
+            }
+        }
+        .logo {
+            img {
+                width: 3.5rem;
+            }
+        }
+    }
+
+    @include responsive(800px) {
+        nav {
+            @include flex(row, center, space-between);
+            .contact {
+                .btn-contact {
+                    a {
+                        @include style-btn(3.8rem, #000, #000, $white);
+                        @include flex(row, center, center);
+                        span {
+                            color: $white;
+                            font-size: 1.4rem;
+                            line-height: 1.9rem;
+                            text-transform: uppercase;
+                        }
+                        &:not(:first-child) {
+                            display: block;
+                            margin-left: 3rem;
+                        }
+                    }
+                }
+                
+                .carosel-hero {
+                    display: block;
+                }
+            }
+    }
+    .btn-request {
+        display: none;
+    }
+    }
+
+    @include responsive(800px) {
+        position: initial;
+        height: 12.2rem;
+        padding: 3rem 0;
+        nav {
+                .contact {
+                    .btn-contact{
+                        a {
+                            display: flex !important;
+                            align-items: center !important;
+                            height: 4.3rem;
+                            padding: 0 1.8rem;
+                            .img-contact-desk {
+                                display: block;
+                            }
+                            .img-contact-mobile {
+                                display: none;
+                            }
+                            span {
+                                font-size: 1.2rem;
+                                line-height: 1.9rem;
+                            }
+                            &:last-child {
+                                background-color: $green-color;
+                            }
+                        }
+                    }
+                }
+                .carosel-hero{
+                    margin-top: 2rem;
+                    a{
+                        display: flex;
+                        p{
+                            letter-spacing: 1.6rem;
+                            margin-right: 1.4rem;
+                        }
+                    }
+                }
+                .logo {
+                    img {
+                        width: 8.5rem !important;
+                    }
+                }
+            }
+    }
+}

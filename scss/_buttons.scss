@@ -1,0 +1,3 @@
+button {
+    @include style-btn(4.5rem, $blue-primary, $blue-secondary, $white)
+}

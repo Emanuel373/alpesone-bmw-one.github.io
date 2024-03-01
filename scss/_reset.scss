@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'bmw bold';
+    src: url(../src/fonts/bmw_typenext_bold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'bmw light';
+    src: url(../src/fonts/bmw_typenext_light.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'bmw light', sans-serif;
+    font-weight: 300;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+}
